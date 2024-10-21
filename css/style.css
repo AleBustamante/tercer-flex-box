@@ -2,32 +2,39 @@ body {
   margin: 0;
 }
 .contenedor-flexible {
+  background-color: grey;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
 }
 
+.elemento-flexible {
+  font-size: 5rem;
+  color: black;
+}
 .uno {
-  background-color: red;
-  width: 250px;
-  height: 250px;
+  background-image: url("../hamburguesa2.jpg");
+  background-color: turquoise;
+  flex-basis: 100vh;
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 50vw;
 }
 .dos {
-  background-color: green;
-  width: 250px;
-  height: 250px;
+  background-image: url("../papas.jpg");
+  background-color: midnightblue;
+  flex-basis: 50vh;
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 50vw;
 }
 .tres {
-  background-color: blue;
-  width: 250px;
-  height: 250px;
-}
-.cuatro {
-  background-color: violet;
-  width: 250px;
-  height: 250px;
-}
-.cinco {
-  background-color: yellowgreen;
-  width: 250px;
-  height: 250px;
+  background-image: url("../hamburguesa1.jpg");
+  background-color: powderblue;
+  flex-basis: 50vh;
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 50vw;
 }
